@@ -1,0 +1,131 @@
+/*Variaveis*/
+:root {
+    --primary-color: #ffc105;
+    --secund-color: #a8a0a662;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center; 
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+header,
+main,
+footer {
+    width: 100%;
+    text-align: center;
+}
+header {
+    height: 120px;
+    background-color: var(--primary-color);
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 15px var(--primary-color);
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    background: var(--primary-color);
+}
+
+/*Header*/
+header {
+    padding-top: 60px;
+}
+.title {
+    width: 40%;
+    float: left;
+}
+.search input {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    padding: 10px;
+}
+.card-final a {
+    color: black;
+}
+.card-final img {
+    position: absolute;
+    top: 75px;
+    right: 100px;
+    width: 35px;
+    cursor: pointer;
+}
+#unidades {
+    position: absolute;
+    top: 80px;
+    right: 107px;
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Produtos*/
+#produtos {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(5, 1fr);
+}
+#produtos div {
+    margin: 10px 10px 10px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px -5px black;  
+    border: 1px solid silver;  
+}
+#produtos p {
+    display: inline-flex;
+    width: 150px;
+    margin-top: 5px;
+}
+.produto-single img {
+    width: 10rem;
+    box-shadow: 1px 1px 5px black;
+}
+.produto-single img:hover {
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+.btn-produto {
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 0 15px 15px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: 2px 2px 0 black;
+    cursor: pointer;
+}
+
+/*carousel*/
+#carousel {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid silver;
+    color: silver;
+    text-align: center;
+    box-shadow: 5px 5px 15px silver;
+    padding: 25px;
+}
+.container-left {
+    float: left;
+    background-color: #c0c0c060;
+    width: 30%;
+    margin-left: 50px;
+    height: auto;
+    min-height: 250px;
+}
+.container-right {
+    float: right;
+    width: 45%;
+    margin-right: 50px;
+    height: auto;
+}
