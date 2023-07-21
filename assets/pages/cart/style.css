@@ -54,3 +54,6 @@ main h1 {
     cursor: pointer;
     color: black;
 }
+.btn-cart:hover {
+    box-shadow: 1px 1px 5px black;
+}

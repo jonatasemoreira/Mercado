@@ -1,5 +1,3 @@
-
-//Atualizar carrinho
 atualizarCarrinho = () => {
     var containerCarrinho = document.querySelector('#carrinho');
     containerCarrinho.innerHTML = "";
@@ -10,6 +8,7 @@ atualizarCarrinho = () => {
             <div class="carrinho-single"> 
                 <p>`+val.nome+` | Quantidade: `+val.quantidade+`</p><hr>
             </div>
+            
         `;
         }
     })

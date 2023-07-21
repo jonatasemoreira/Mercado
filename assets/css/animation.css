@@ -2,7 +2,8 @@
     animation: escrever 10s infinite;
     text-shadow: 1px 1px 5px white;
 }
-#text-search:hover {
+#text-search:hover, 
+#text-search:active {
     animation: none;
 }
 @keyframes escrever {

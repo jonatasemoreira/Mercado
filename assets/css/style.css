@@ -37,11 +37,11 @@ header {
     padding-top: 60px;
 }
 .title {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 .search input {
-    width: 250px;
+    width: 150px;
     background-color: transparent;
     border: none;
     outline: 0;
@@ -68,30 +68,35 @@ header {
 
 /*Produtos*/
 #produtos {
-    display: grid;
-    padding: 25px;
-    grid-template-columns: repeat(5, 1fr);
+    width: 95%;
+    padding: 20px;
+    justify-content: center;
 }
-#produtos div {
-    margin: 10px 10px 10px;
-    background-color: aliceblue;
-    box-shadow: 1px 1px -5px black;  
-    border: 1px solid silver;  
+#produtos ul {
+    display: inline-flex;
 }
-#produtos p {
+.li-produtos li {
+    list-style-type: none;
+    width: 200px;
+    height: 350px;
+    border: 1px solid silver;
+}
+.li-produtos li img {
+    width: 150px;
+    display: inline-flex;
+    width: 10rem;
+    box-shadow: 1px 1px 5px black;
+}
+.li-produtos li img:hover {
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+.li-produtos li p {
     display: inline-flex;
     width: 150px;
     margin-top: 5px;
 }
-.produto-single img {
-    width: 10rem;
-    box-shadow: 1px 1px 5px black;
-}
-.produto-single img:hover {
-    transition: 1.5s;
-    transform: scale(1.1);
-}
-.btn-produto {
+.li-produtos li a {
     color: black;
     border: none;
     padding: 10px;
@@ -102,6 +107,9 @@ header {
     text-decoration: none;
     box-shadow: 2px 2px 0 black;
     cursor: pointer;
+}
+.li-produtos li a:hover {
+    box-shadow: 1px 1px 15px black;
 }
 
 /*carousel*/
@@ -125,7 +133,35 @@ header {
 }
 .container-right {
     float: right;
-    width: 45%;
+    width: 70%;
+    max-width: 500px;
     margin-right: 50px;
     height: auto;
+}
+.carousel-item img {
+    width: 50%;
+    min-width: 250px;
+}
+
+@media(max-width:1050px) {
+    .container-left {
+        margin-left: 0px;
+    }
+    .container-right {
+        margin-right: 0px;
+    }
+    #carousel {
+        width: 90%;
+    }
+    main {
+        overflow-x: auto;
+    }
+    .card-final img {
+        top: 25px;
+        right: 25px;
+    }
+    #unidades {
+        top: 30px;
+        right: 32px;
+    }
 }
