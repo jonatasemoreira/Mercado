@@ -1,0 +1,236 @@
+/*Variaveis*/
+:root {
+    --primary-color: #ffc105;
+    --secund-color: #a8a0a662;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center; 
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+header,
+main,
+footer {
+    width: 100%;
+    text-align: center;
+}
+header {
+    height: 150px;
+    background-color: var(--primary-color);
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 15px var(--primary-color);
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    background: var(--primary-color);
+}
+/*Header*/
+header {
+    padding-top: 60px;
+}
+.title {
+    width: 50%;
+    float: left;
+}
+.title h1 {
+    cursor: pointer;
+}
+.search input {
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    padding: 10px;
+}
+.card-final {
+    position: absolute;
+    top: 70px;
+    right: 85px;
+}
+.card-final p p {
+    position: fixed;
+    top: 85px;
+    right: 30px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-size: 20px;
+    border: 2px solid ;
+    background-color: rgba(0, 0, 0, 0.24);
+    animation: pulsar 2s infinite;
+    z-index: 1;
+}
+@keyframes pulsar {
+    0%, 
+    100% {
+        transform: scale(1.2);
+        border-color: black;
+        color: red;
+    }
+    50% {
+        transform: scale(1.5);
+        border-color: red;
+        color: black;
+    }
+}
+
+
+#unidades {
+    position: absolute;
+    top: 80px;
+    right: 107px;
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*Produtos*/
+#produtos {
+    width: 95%;
+    padding: 20px;
+    justify-content: center;
+}
+#produtos ul {
+    display: inline-flex;
+}
+.li-produtos li {
+    list-style-type: none;
+    width: 200px;
+    height: 350px;
+}
+.li-produtos li img {
+    width: 150px;
+    display: inline-flex;
+    width: 10rem;
+    box-shadow: 1px 1px 5px black;
+}
+.li-produtos li img:hover {
+    transition: 1.5s;
+    transform: scale(1.1);
+}
+.li-produtos li p {
+    display: inline-flex;
+    width: 150px;
+    margin-top: 5px;
+}
+.li-produtos li a {
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin: 0 15px 15px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: 2px 2px 0 black;
+    cursor: pointer;
+}
+.li-produtos li a:active {
+    transform: scale(1.1);
+}
+/*carousel*/
+#carousel {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid silver;
+    color: silver;
+    text-align: center;
+    box-shadow: 5px 5px 15px silver;
+    padding: 25px;
+}
+.container-left {
+    float: left;
+    background-color: #c0c0c060;
+    width: 25%;
+    margin-left: 50px;
+    min-height: 250px;
+}
+.container-right {
+    float: right;
+    width: 70%;
+    max-width: 500px;
+    margin-right: 50px;
+    height: auto;
+}
+.carousel-item img {
+    width: 50%;
+    min-width: 250px;
+}
+#text-search {
+    animation: escrever 10s infinite;
+    text-shadow: 1px 1px 5px white;
+}
+#text-search:hover, 
+#text-search:active {
+    animation: none;
+}
+@keyframes escrever {
+    0% {
+        width: 5px;
+    }   
+    50% {
+        width: 120px;
+    }
+}
+.title .one-title {
+   animation: one 2s infinite;
+   color: blue;
+}
+.title .two-title {
+    color: red;
+}
+@keyframes one {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+@media(max-width:1050px) {
+    .container-left {
+        margin-left: 0px;
+    }
+    .container-right {
+        margin-right: 0px;
+    }
+    #carousel {
+        width: 90%;
+    }
+    main {
+        overflow-x: auto;
+    }
+    .card-final img {
+        top: 25px;
+        right: 25px;
+    }
+    #unidades {
+        top: 30px;
+        right: 32px;
+    }
+    #produtos {
+        width: 100%;
+    }
+    .li-produtos li {
+        position: relative;
+        right: 25px;
+        width: 120px;
+    }
+    .li-produtos li img {
+        width: 150px;
+    }
+    .card-final {
+        position: absolute;
+        top: 70px;
+        right: 25px;
+    }
+}
